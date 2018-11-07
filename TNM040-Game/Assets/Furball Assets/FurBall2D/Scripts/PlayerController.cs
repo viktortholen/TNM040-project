@@ -16,8 +16,11 @@ public class PlayerController : MonoBehaviour {
 	private Animator cloudanim;
 	public GameObject Cloud;
     public bool canJump = false;
+    public bool canDown = false;
+    public bool canLeft = false;
+    public bool canRight = true;
 
-	private Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
 	private Animator anim;
 	private bool isGrounded = false;
 
@@ -60,7 +63,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-	if (Input.GetButtonDown("Vertical") && !isGrounded && canJump)
+	if (Input.GetButtonDown("Vertical") && !isGrounded && canDown)
 		{
 			rb2d.AddForce(new Vector2(0,-jumpForce));
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
@@ -79,14 +82,17 @@ public class PlayerController : MonoBehaviour {
 		float hor = Input.GetAxis ("Horizontal");
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor));
-
-		rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
+        if (canRight)
+        {
+            rb2d.velocity = new Vector2(hor * maxSpeed, rb2d.velocity.y);
+        }
+		
 		  
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
 		anim.SetBool ("IsGrounded", isGrounded);
 
-		if ((hor > 0 && !lookingRight)||(hor < 0 && lookingRight))
+		if ((hor > 0 && !lookingRight)||(hor < 0 && lookingRight) && canLeft)
 			Flip ();
 		 
 		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
