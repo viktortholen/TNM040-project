@@ -408,7 +408,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 5
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -828,7 +828,7 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2805,11 +2805,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4800543654415460, guid: 89369dc89ea82c645b8ae64319a43340, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.800529
+      value: 12.97
       objectReference: {fileID: 0}
     - target: {fileID: 4800543654415460, guid: 89369dc89ea82c645b8ae64319a43340, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.348354
+      value: -7.84
       objectReference: {fileID: 0}
     - target: {fileID: 4800543654415460, guid: 89369dc89ea82c645b8ae64319a43340, type: 2}
       propertyPath: m_LocalPosition.z
