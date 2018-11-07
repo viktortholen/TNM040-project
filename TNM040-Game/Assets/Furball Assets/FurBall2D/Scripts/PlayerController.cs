@@ -78,21 +78,22 @@ public class PlayerController : MonoBehaviour {
 		if (isGrounded) 
 			doubleJump = false;
 
+        float hor;
+  
+        hor = Input.GetAxis("Horizontal");
 
-		float hor = Input.GetAxis ("Horizontal");
+
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor));
-        if (canRight)
-        {
+
             rb2d.velocity = new Vector2(hor * maxSpeed, rb2d.velocity.y);
-        }
 		
 		  
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
 		anim.SetBool ("IsGrounded", isGrounded);
 
-		if ((hor > 0 && !lookingRight)||(hor < 0 && lookingRight) && canLeft)
+		if ((hor > 0 && !lookingRight)||(hor < 0 && lookingRight))
 			Flip ();
 		 
 		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
