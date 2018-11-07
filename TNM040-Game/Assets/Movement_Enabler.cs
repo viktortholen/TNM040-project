@@ -8,6 +8,7 @@ public class Movement_Enabler : MonoBehaviour {
     public GameObject Player;
     public bool Left, Right, Jump, Down;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
