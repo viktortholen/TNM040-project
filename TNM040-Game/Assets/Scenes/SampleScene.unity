@@ -3225,7 +3225,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1118449825}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 1591
   verticalSpeed: 20
   lookingRight: 1
   Boost: {fileID: 0}
