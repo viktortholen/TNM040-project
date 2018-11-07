@@ -16,8 +16,8 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
+  - Base
+  - Props
   - 
   - 
   - 
@@ -42,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Base
+    uniqueID: 1883197309
+    locked: 0
+  - name: Props
+    uniqueID: 2970712183
     locked: 0
