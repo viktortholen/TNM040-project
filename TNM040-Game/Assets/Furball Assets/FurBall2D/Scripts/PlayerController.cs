@@ -23,14 +23,14 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb2d;
 	private Animator anim;
 	private bool isGrounded = false;
-
+    private gameMaster gm;
 
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
-		//cloudanim = GetComponent<Animator>();
-
+        //cloudanim = GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<gameMaster>();
 		Cloud = GameObject.Find("Cloud");
   		//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
 	}
@@ -44,11 +44,19 @@ public class PlayerController : MonoBehaviour {
 
 		}
 	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+            gm.points++;
+        }
+    }
 
 
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
 	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump) && canJump)
 		{
