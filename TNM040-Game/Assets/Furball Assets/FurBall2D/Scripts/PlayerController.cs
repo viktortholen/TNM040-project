@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 	
 	private Animator cloudanim;
 	public GameObject Cloud;
-
+    public bool canJump = false;
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
+	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump) && canJump)
 		{
 			rb2d.AddForce(new Vector2(0,jumpForce));
 
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-	if (Input.GetButtonDown("Vertical") && !isGrounded)
+	if (Input.GetButtonDown("Vertical") && !isGrounded && canJump)
 		{
 			rb2d.AddForce(new Vector2(0,-jumpForce));
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
