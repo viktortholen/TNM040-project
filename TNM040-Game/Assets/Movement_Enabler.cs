@@ -29,7 +29,7 @@ public class Movement_Enabler : MonoBehaviour {
             {
                 EnableRight();
             }
-
+            Destroy(this.gameObject);
         }
     }
     void EnableJump()
