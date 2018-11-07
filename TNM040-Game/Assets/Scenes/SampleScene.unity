@@ -2867,6 +2867,7 @@ GameObject:
   - component: {fileID: 1329211979}
   - component: {fileID: 1329211978}
   - component: {fileID: 1329211980}
+  - component: {fileID: 1329211981}
   m_Layer: 0
   m_Name: spikes_by_tastygraph-dayxq90
   m_TagString: Untagged
@@ -2942,7 +2943,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.3}
@@ -2958,6 +2959,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1329211981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329211977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51161a4ad682c047b5c6532a9429579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
 --- !u!1 &1340525144
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,6 +3151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1482721269}
+  - component: {fileID: 1482721270}
   m_Layer: 0
   m_Name: Levelmanager
   m_TagString: Untagged
@@ -3158,6 +3172,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1482721270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482721268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e519126d919f0440b7a29f7b9fca70e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckpoint: {fileID: 1942666535}
 --- !u!1001 &1591928684
 Prefab:
   m_ObjectHideFlags: 0
@@ -3302,6 +3328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1942666536}
+  - component: {fileID: 1942666537}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -3322,6 +3349,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1942666537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942666535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e8653024f85f8469aab98a98ae5ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1990464556
 GameObject:
   m_ObjectHideFlags: 0
