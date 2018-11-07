@@ -32,10 +32,15 @@ public class PauseMenu : MonoBehaviour {
         }
 		
         void Pause()
-        {
+         {
             PauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsPaused = true;
 
+        }
+    public void QuitGame()
+        {
+        Debug.Log("Quitting...");
+        Application.Quit();
         }
 }
