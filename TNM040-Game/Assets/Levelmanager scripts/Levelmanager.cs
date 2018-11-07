@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Levelmanager : MonoBehaviour {
+public class LevelManager : MonoBehaviour {
+
+    public GameObject currentCheckpoint;
+
+    private PlayerController player;
 
 	// Use this for initialization
 	void Start () {
+        player = FindObjectOfType<PlayerController>();
 		
 	}
 	
@@ -13,4 +18,11 @@ public class Levelmanager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void RespawnPlayer()
+    {
+        Debug.Log("Player Respawn");
+        player.transform.position = currentCheckpoint.transform.position;
+
+    }
 }
