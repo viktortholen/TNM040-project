@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212026848666626078}
   - component: {fileID: 95399893545656210}
   - component: {fileID: 61292211439223094}
+  - component: {fileID: 114852896710262214}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Coin
@@ -152,6 +153,18 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114852896710262214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714572091442184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1396b4be50e1ff342babb8dd66564253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
 --- !u!212 &212026848666626078
 SpriteRenderer:
   m_ObjectHideFlags: 1
