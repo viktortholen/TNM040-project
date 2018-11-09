@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class gameMaster : MonoBehaviour {
 
-    public int points = 0;
-    Text pointScore;
+    public int points;
+    public Text PointScore;
 
-    private void Start()
-    {
-        pointScore = GetComponent<Text> ();
-    }
+    ////private void Start()
+    ////{
+    ////    PointScore = GetComponent<Text> ();
+    ////}
 
     private void Update()
     {
         //pointsText = ("Points: " + points);
-        pointScore.text = "Score: " + points;
+        PointScore.text = "Score: " + points;
         Debug.Log(points);
     }
 }
