@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4581021445583022}
   - component: {fileID: 212781579597351746}
-  - component: {fileID: 61615799063857970}
   - component: {fileID: 114898832155601898}
+  - component: {fileID: 60947860135749368}
   m_Layer: 10
   m_Name: Spike
   m_TagString: Untagged
@@ -36,14 +36,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1398839183543620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.5, y: -8.5, z: 0}
-  m_LocalScale: {x: 0.39056557, y: 0.38865802, z: 1}
+  m_LocalPosition: {x: 14.5, y: -8.5083, z: 0}
+  m_LocalScale: {x: 1.3888776, y: 1.5553695, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61615799063857970
-BoxCollider2D:
+--- !u!60 &60947860135749368
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -54,19 +54,27 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.29, y: 2}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.0059930906, y: 0.31999978}
+      - {x: -0.07558929, y: 0.17248577}
+      - {x: -0.12723713, y: 0.06988006}
+      - {x: -0.3041301, y: -0.2780922}
+      - {x: -0.32, y: -0.32}
+      - {x: 0.32, y: -0.32}
+      - {x: 0.29279488, y: -0.2640462}
+      - {x: 0.1051146, y: 0.10614787}
+      - {x: 0.0073286267, y: 0.3179764}
 --- !u!114 &114898832155601898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +123,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cb3b7857987e0ad42bfa19a386518cf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb2b4e7a8c27abc40ba78e617b393530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
