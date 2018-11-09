@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class gameMaster : MonoBehaviour {
 
     public int points;
-    public Text PointScore;
+    public TextMeshProUGUI PointScore;
 
     ////private void Start()
     ////{

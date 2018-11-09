@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:TNM040-Game/Assets/Furball Assets/FurBall2D_mobile/Resources.meta
 guid: 995a18128b94cb3448abd4eaf5dbfaca
+=======
+guid: ceac15ae96db7974fbb9c875b5d51604
+>>>>>>> e5356ef33294fff131e2fbfd22c6ee66e5cd2b1a:TNM040-Game/Assets/Furball Assets/FurBall2D_mobile/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
