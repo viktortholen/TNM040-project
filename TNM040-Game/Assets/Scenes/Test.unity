@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 19629873}
   m_Layer: 0
   m_Name: Groundtiles
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19983,7 +19983,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53386034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 2, z: 0}
+  m_LocalPosition: {x: 19.5, y: 10, z: 0}
   m_LocalScale: {x: 2.9531436, y: 0.942383, z: 1}
   m_Children: []
   m_Father: {fileID: 206069713}
@@ -20003,10 +20003,10 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0.3}
-  m_ConnectedAnchor: {x: -3.4765718, y: 2.2827148}
-  m_UseMotor: 0
+  m_ConnectedAnchor: {x: 18.023428, y: 10.282715}
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 300
     m_MaximumMotorForce: 10000
   m_UseLimits: 0
   m_AngleLimits:
@@ -20023,9 +20023,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
