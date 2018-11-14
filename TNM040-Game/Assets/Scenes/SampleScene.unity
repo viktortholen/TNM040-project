@@ -650,6 +650,11 @@ Prefab:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
+    - target: {fileID: 114942189684982770, guid: 1262d5e9903e89043be27a84d7707630,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1262d5e9903e89043be27a84d7707630, type: 2}
   m_IsPrefabAsset: 0
@@ -766,6 +771,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &416158748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1398839183543620, guid: 0b9a3c3377f86494c9a90cdcb790055b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1308253218}
+--- !u!114 &416158752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 416158748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51161a4ad682c047b5c6532a9429579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 0}
 --- !u!1 &416237911
 GameObject:
   m_ObjectHideFlags: 0
