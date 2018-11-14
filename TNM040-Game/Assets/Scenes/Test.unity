@@ -19969,6 +19969,7 @@ GameObject:
   - component: {fileID: 53386038}
   - component: {fileID: 53386037}
   - component: {fileID: 53386036}
+  - component: {fileID: 53386040}
   m_Layer: 10
   m_Name: RotationTrap
   m_TagString: Untagged
@@ -19983,8 +19984,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 53386034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.5, y: 10, z: 0}
-  m_LocalScale: {x: 2.9531436, y: 0.942383, z: 1}
+  m_LocalPosition: {x: 1.5, y: 3, z: 0}
+  m_LocalScale: {x: 2.9944878, y: 0.708672, z: 1}
   m_Children: []
   m_Father: {fileID: 206069713}
   m_RootOrder: 8
@@ -20003,7 +20004,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0.3}
-  m_ConnectedAnchor: {x: 18.023428, y: 10.282715}
+  m_ConnectedAnchor: {x: 0.0027561188, y: 3.2126017}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 300
@@ -20041,7 +20042,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.15}
@@ -20103,6 +20104,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &53386040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 53386034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51161a4ad682c047b5c6532a9429579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelManager: {fileID: 1559240696}
 --- !u!1001 &73417669
 Prefab:
   m_ObjectHideFlags: 0
