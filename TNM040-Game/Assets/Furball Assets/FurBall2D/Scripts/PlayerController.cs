@@ -5,6 +5,10 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 
+    public  float WaterSpeed = 0;
+    public  float WaterJumpForce = 0;
+    public  float GroundSpeed = 0;
+    public  float GroundJumpForce = 0;
     public float maxSpeed = 6f;
     public float jumpForce = 1000f;
     public Transform groundCheck;
@@ -50,7 +54,27 @@ public class PlayerController : MonoBehaviour
 
         }
     }
-
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water"))
+        {
+            Debug.Log("Water!");
+            rb2d.gravityScale = 0.2f;
+            maxSpeed = WaterSpeed;
+            jumpForce = WaterJumpForce;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water"))
+        {
+            Debug.Log("Leaving Water!");
+            rb2d.gravityScale = 1f;
+            maxSpeed = GroundSpeed;
+            jumpForce = GroundJumpForce;
+        }
+    }
+    
     // Update is called once per frame
     void Update()
     {

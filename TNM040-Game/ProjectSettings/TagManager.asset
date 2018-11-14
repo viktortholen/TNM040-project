@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameMaster
   - Coin
+  - Water
   layers:
   - Default
   - TransparentFX
