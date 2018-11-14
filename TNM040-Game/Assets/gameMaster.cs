@@ -8,7 +8,7 @@ public class gameMaster : MonoBehaviour {
 
     public int points;
     public TextMeshProUGUI PointScore;
-
+    public TextMeshProUGUI YouWinMessage;
     ////private void Start()
     ////{
     ////    PointScore = GetComponent<Text> ();
@@ -17,7 +17,15 @@ public class gameMaster : MonoBehaviour {
     private void Update()
     {
         //pointsText = ("Points: " + points);
-        PointScore.text = "Score: " + points;
+        PointScore.text = "Score: " + points + "/17";
+
+        if (points == 17)
+        {
+            YouWinMessage.text = "Find The Portal!";
+        }
+        
         Debug.Log(points);
+
+      
     }
 }
