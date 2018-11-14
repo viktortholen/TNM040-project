@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Debug.Log(hitInfo.name);
-        if(hitInfo.CompareTag("Player") || hitInfo.compareTag("Props"))
+        if(hitInfo.CompareTag("Player") || hitInfo.CompareTag("Props"))
         {
             Destroy(gameObject);
         }
