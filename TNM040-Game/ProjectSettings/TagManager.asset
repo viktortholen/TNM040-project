@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameMaster
   - Coin
+  - Props
   layers:
   - Default
   - TransparentFX
