@@ -420,7 +420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41.4, y: 6.55}
+  m_AnchoredPosition: {x: 20.98, y: 6.55}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &125937643
@@ -890,16 +890,6 @@ Prefab:
       propertyPath: PointScore
       value: 
       objectReference: {fileID: 801030524}
-    - target: {fileID: 114705610222914868, guid: 76ad9f06d35c0cd48914870429ff6069,
-        type: 2}
-      propertyPath: YouWinMessage
-      value: 
-      objectReference: {fileID: 1911373902}
-    - target: {fileID: 114705610222914868, guid: 76ad9f06d35c0cd48914870429ff6069,
-        type: 2}
-      propertyPath: points
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ad9f06d35c0cd48914870429ff6069, type: 2}
   m_IsPrefabAsset: 0
@@ -21401,7 +21391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -67, y: -17.049988}
+  m_AnchoredPosition: {x: -68.400024, y: -17.049988}
   m_SizeDelta: {x: 135.79999, y: 33.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801030524
@@ -21423,7 +21413,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Score
+  m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21491,10 +21481,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 5
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -23097,7 +23087,6 @@ RectTransform:
   m_Children:
   - {fileID: 86718384}
   - {fileID: 801030523}
-  - {fileID: 1911373901}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25025,6 +25014,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1904132392}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1911373900
 GameObject:
   m_ObjectHideFlags: 0
@@ -25206,6 +25196,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1865157335}
 >>>>>>> 327bd5ec974e98f6d33bc14663fe826141af9eba
+=======
+>>>>>>> parent of baa2419... Score
 --- !u!1 &1942666535
 GameObject:
   m_ObjectHideFlags: 0
