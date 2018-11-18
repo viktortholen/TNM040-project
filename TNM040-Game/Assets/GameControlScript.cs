@@ -5,9 +5,7 @@ using UnityEngine;
 public class GameControlScript : MonoBehaviour {
 
     public GameObject heart1, heart2, heart3, gameOver;
-    public GameObject restartButton;
     public static int health;
-    public static bool GameIsPaused = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +15,6 @@ public class GameControlScript : MonoBehaviour {
         heart2.gameObject.SetActive(true);
         heart3.gameObject.SetActive(true);
         gameOver.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
-        Time.timeScale = 1;
     }
 	
 	// Update is called once per frame
@@ -51,7 +47,6 @@ public class GameControlScript : MonoBehaviour {
                 heart3.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
                 Time.timeScale = 0;
-                restartButton.gameObject.SetActive(true);
                 break;
         }
 	}
