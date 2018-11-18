@@ -11,13 +11,13 @@ public class GameControlScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        restartButton.gameObject.SetActive(false);
         health = 3;
         heart1.gameObject.SetActive(true);
         heart2.gameObject.SetActive(true);
         heart3.gameObject.SetActive(true);
         gameOver.gameObject.SetActive(false);
-        restartButton.gameObject.SetActive(false);
+        
         Time.timeScale = 1;
     }
 	
