@@ -16,7 +16,11 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Instantiate(CoinParticle, transform.position, Quaternion.identity);
+            if (CoinParticle)
+            {
+                Instantiate(CoinParticle, transform.position, Quaternion.identity);
+            }
+           
             Destroy(this.gameObject);
             gm.points++;
         }
