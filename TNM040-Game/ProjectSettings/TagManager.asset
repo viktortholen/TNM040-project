@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - GameMaster
   - Props
+  - Base
   layers:
   - Default
   - TransparentFX
