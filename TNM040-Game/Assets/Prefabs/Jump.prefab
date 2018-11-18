@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3ac839d7196ec4ea97b8f6d76bdaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 1168584603769064, guid: 6b6eb5a4670a06942a495298bbffb81c, type: 2}
   Left: 0
   Right: 0
   Jump: 1
