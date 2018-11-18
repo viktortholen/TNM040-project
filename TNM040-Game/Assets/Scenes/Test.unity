@@ -20625,7 +20625,7 @@ MonoBehaviour:
   heart2: {fileID: 1431101227}
   heart3: {fileID: 729832255}
   gameOver: {fileID: 1756868745}
-  restartButton: {fileID: 0}
+  restartButton: {fileID: 1275867476}
 --- !u!1 &326648754
 GameObject:
   m_ObjectHideFlags: 0
