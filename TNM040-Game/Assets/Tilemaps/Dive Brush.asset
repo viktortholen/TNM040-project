@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Dive Brush
   m_EditorClassIdentifier: 
   m_Prefabs:
-  - {fileID: 1098556408350722, guid: 98bd11206cb82534e8d21c8fac62ad2b, type: 2}
+  - {fileID: 1549093084646044, guid: c7dd73dbf0294e044bcfe83823e11174, type: 2}
   m_PerlinScale: 0.5
   m_Z: 0
