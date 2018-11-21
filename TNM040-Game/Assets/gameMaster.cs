@@ -9,16 +9,28 @@ public class gameMaster : MonoBehaviour {
     public int points;
     public TextMeshProUGUI PointScore;
     public TextMeshProUGUI YouWinMessage;
-    ////private void Start()
-    ////{
-    ////    PointScore = GetComponent<Text> ();
-    ////}
+    public GameObject Grid;
 
-    private void Update()
+
+    int childs;
+
+    private void Start()
     {
-        //pointsText = ("Points: " + points);
-        PointScore.text = "Score: " + points + "/17";
+          childs = Grid.transform.childCount;
+    }
 
+
+
+
+
+
+private void Update()
+    {
+      
+        //pointsText = ("Points: " + points);
+        PointScore.text = "Score: " + points + "/" + childs;
+            
+        Debug.Log(childs);
         if (points == 17)
         {
             YouWinMessage.text = "Find The Portal!";
