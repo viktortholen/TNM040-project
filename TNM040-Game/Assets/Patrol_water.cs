@@ -14,33 +14,37 @@ public class Patrol_water : MonoBehaviour
     private void Start()
     {
         direction = Vector2.left;
+
     }
 
 
     void Update()
     {
         this.transform.Translate(Vector2.left * speed * Time.deltaTime);
-
-
+        
+        
         RaycastHit2D wallinfo = Physics2D.Raycast(WallDetection.position, direction, 0.1f);
-
-
-        if (wallinfo.collider.CompareTag("Base") != false)
+        if(wallinfo.collider.CompareTag("Base") != false)
         {
-            if (movingLeft == true)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingLeft = false;
+            Flip();
+        }
+        
 
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingLeft = true;
+    }
 
-            }
+   public void Flip()
+    {
+        if (movingLeft == true)
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            movingLeft = false;
 
         }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            movingLeft = true;
 
+        }
     }
 }

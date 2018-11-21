@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 95807234265087976}
   - component: {fileID: 114901764789295216}
   - component: {fileID: 114931455639707274}
+  - component: {fileID: 60118719318972198}
   m_Layer: 0
   m_Name: Water_enemy
   m_TagString: Untagged
@@ -51,8 +52,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1903953546107612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.19, y: 0.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.43, y: -28.54, z: 2.1835938}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4501284908901360}
@@ -72,6 +73,40 @@ Transform:
   m_Father: {fileID: 4450344814770636}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60118719318972198
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903953546107612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.796875, y: 0.40625}
+    newSize: {x: 0.796875, y: 0.40625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.15390778, y: 0.09445858}
+      - {x: 0.14642715, y: 0.20855618}
+      - {x: 0.04315567, y: 0.11350727}
+      - {x: -0.2219162, y: 0.084895134}
+      - {x: -0.39839554, y: -0.046954155}
+      - {x: -0.023513794, y: -0.17596912}
+      - {x: 0.23195267, y: -0.08092022}
+      - {x: 0.3984375, y: -0.09445858}
+      - {x: 0.41201782, y: 0.092411995}
+      - {x: 0.2938652, y: 0.07068634}
 --- !u!95 &95807234265087976
 Animator:
   serializedVersion: 3
@@ -81,7 +116,7 @@ Animator:
   m_GameObject: {fileID: 1903953546107612}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 58f1807374964ab48ba0d7de198e81f8, type: 2}
+  m_Controller: {fileID: 9100000, guid: a4391d1425eb36545b4da1a8e95bfcfb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,7 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51161a4ad682c047b5c6532a9429579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 114942189684982770, guid: 1262d5e9903e89043be27a84d7707630,
+    type: 2}
 --- !u!212 &212728116007004546
 SpriteRenderer:
   m_ObjectHideFlags: 1
