@@ -11,19 +11,22 @@ public class gameMaster : MonoBehaviour {
     public TextMeshProUGUI YouWinMessage;
     public GameObject Grid;
 
-    ////private void Start()
-    ////{
-    ////    PointScore = GetComponent<Text> ();
-    ////}
-   
 
+    int childs;
 
-    
-   
-
-    private void Update()
+    private void Start()
     {
-        int  childs = Grid.transform.childCount;
+          childs = Grid.transform.childCount;
+    }
+
+
+
+
+
+
+private void Update()
+    {
+      
         //pointsText = ("Points: " + points);
         PointScore.text = "Score: " + points + "/" + childs;
             
