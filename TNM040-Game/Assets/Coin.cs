@@ -22,6 +22,7 @@ public class Coin : MonoBehaviour
             }
            
             Destroy(this.gameObject);
+            FindObjectOfType<AudioManager>().Play("coinpickup");
             gm.points++;
         }
     }
