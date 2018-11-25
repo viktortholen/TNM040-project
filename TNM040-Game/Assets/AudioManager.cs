@@ -6,6 +6,8 @@ using System;
 public class AudioManager : MonoBehaviour {
 
     public Sound[] sounds;
+
+    public static AudioManager instance;
 	// Use this for initialization
 	void Awake () {
 
