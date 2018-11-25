@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour
 {
@@ -88,7 +89,10 @@ public class PlayerController : MonoBehaviour
                 doubleJump = true;
                 Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
                 //	cloudanim.Play("cloud");		
+                FindObjectOfType<AudioManager>().Play("jump");
             }
+            FindObjectOfType<AudioManager>().Play("jump");
+
         }
 
 
