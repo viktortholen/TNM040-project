@@ -55,11 +55,11 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Water"))
         {
-            Debug.Log("Water!");
             rb2d.gravityScale = 0.2f;
             maxSpeed = WaterSpeed;
             jumpForce = WaterJumpForce;
@@ -69,7 +69,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Water"))
         {
-            Debug.Log("Leaving Water!");
             rb2d.gravityScale = 1f;
             maxSpeed = GroundSpeed;
             jumpForce = GroundJumpForce;

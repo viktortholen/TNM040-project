@@ -24,7 +24,7 @@ public class Patrol : MonoBehaviour {
         RaycastHit2D wallinfo = Physics2D.Raycast(GroundDetection.position, direction, 0.1f);
 
 
-        if (groundInfo.collider == false || wallinfo.collider.CompareTag("Base") != false)
+        if (groundInfo.collider == false || wallinfo.collider.CompareTag("Base") != false )
         {
             if(movingRight == true)
             {

@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour {
 
     public float speed = 20f;
     public Rigidbody2D rb;
-    public ParticleSystem ps;
+    public GameObject ps;
     public bool Left = false;
 	// Use this for initialization
 	void Start () {
@@ -25,8 +25,9 @@ public class Bullet : MonoBehaviour {
         Debug.Log(hitInfo.name);
         if(hitInfo.CompareTag("Player") || hitInfo.CompareTag("Props"))
         {
-            Instantiate(ps, this.transform.position, this.transform.rotation);
-            Destroy(gameObject);
+            GameObject clone = (GameObject)Instantiate(ps, transform.position, Quaternion.identity);
+            Destroy(gameObject, 0.2f);
+            Destroy(clone, 1.0f);
         }
         
     }
