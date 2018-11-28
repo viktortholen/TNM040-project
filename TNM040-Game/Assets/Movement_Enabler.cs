@@ -16,6 +16,7 @@ public class Movement_Enabler : MonoBehaviour {
             if (Jump)
             {
                 EnableJump();
+                FindObjectOfType<AudioManager>().Play("powerup");
             }
             if (Down)
             {
