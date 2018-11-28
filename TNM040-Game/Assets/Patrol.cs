@@ -33,7 +33,7 @@ public class Patrol : MonoBehaviour
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 if (Light)
                 {
-             
+                    
                     Vector3 temp = new Vector3(0, 0, 4f);
                     Light.transform.position += temp;
                 }
