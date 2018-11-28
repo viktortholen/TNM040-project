@@ -22,15 +22,8 @@ public class KillPlayer : MonoBehaviour {
         if(collision.name == "Player")
         {
             levelManager.RespawnPlayer();
-            Time.timeScale = 0;
-            StartCoroutine(Delay());
-            Time.timeScale = 1;
+
         }
-    }
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(1f);
-        
     }
 
 }
