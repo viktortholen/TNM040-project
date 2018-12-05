@@ -16,6 +16,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            gm.points++;
             if (CoinParticle)
             {
                 Instantiate(CoinParticle, transform.position, Quaternion.identity);
@@ -23,7 +24,7 @@ public class Coin : MonoBehaviour
            
             Destroy(this.gameObject);
             FindObjectOfType<AudioManager>().Play("coinpickup");
-            gm.points++;
+            
         }
     }
 }
