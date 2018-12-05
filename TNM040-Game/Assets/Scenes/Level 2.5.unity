@@ -2200,7 +2200,7 @@ Prefab:
     - target: {fileID: 114951719151489412, guid: f9fd5c5358fd50b49b20dc75a6803e4e,
         type: 2}
       propertyPath: sounds.Array.data[2].volume
-      value: 0.6
+      value: 0.275
       objectReference: {fileID: 0}
     - target: {fileID: 114951719151489412, guid: f9fd5c5358fd50b49b20dc75a6803e4e,
         type: 2}
