@@ -100,6 +100,8 @@ public class PlayerController : MonoBehaviour
             rb2d.AddForce(new Vector2(0, -jumpForce));
             Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
             //cloudanim.Play("cloud");
+
+            FindObjectOfType<AudioManager>().Play("dive");
         }
 
     }
