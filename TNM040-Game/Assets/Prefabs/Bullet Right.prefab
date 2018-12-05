@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 58001509314628998}
   - component: {fileID: 114075841547102156}
   - component: {fileID: 114548113863372550}
+  - component: {fileID: 114402903416519222}
   m_Layer: 0
   m_Name: Bullet Right
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,6 +193,17 @@ MonoBehaviour:
   rb: {fileID: 50336328414514698}
   ps: {fileID: 1319618020096290, guid: 44ff064b5831220448e4d0a232aab123, type: 2}
   Left: 0
+--- !u!114 &114402903416519222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339039459584254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a15b97d85a88f4eb44852e7a458ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114548113863372550
 MonoBehaviour:
   m_ObjectHideFlags: 1

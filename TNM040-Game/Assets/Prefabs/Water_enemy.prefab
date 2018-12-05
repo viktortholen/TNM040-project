@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114901764789295216}
   - component: {fileID: 114931455639707274}
   - component: {fileID: 60118719318972198}
+  - component: {fileID: 114852198398519220}
   m_Layer: 0
   m_Name: Water_enemy
   m_TagString: Untagged
@@ -125,6 +126,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114852198398519220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903953546107612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a15b97d85a88f4eb44852e7a458ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114901764789295216
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour {
 
-    void OnTriggerEnter2D(Collider2D col)
+   void OnTriggerEnter2D(Collider2D col)
     {
-        GameControlScript.health -= 1;
+        if (col.CompareTag("Player"))
+        {
+            Debug.Log("Du har blivit träffad!!");
+            GameControlScript.health -= 1;
+        }
+        
     }
 }
