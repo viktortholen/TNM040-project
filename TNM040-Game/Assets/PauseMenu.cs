@@ -13,7 +13,12 @@ public class PauseMenu : MonoBehaviour {
     void Update () {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(GameIsPaused)
+            if (SceneManager.GetActiveScene().buildIndex > 0)
+            {
+                FindObjectOfType<AudioManager>().Play("menu");
+            }
+
+            if (GameIsPaused)
             {
                 Resume();
             }
