@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Checkpoint : MonoBehaviour
 {
 
@@ -29,7 +29,11 @@ public class Checkpoint : MonoBehaviour
                 Destroy(clone, 1.0f);
             }
             levelManager.currentCheckpoint = gameObject;
-
+            
+            if(SceneManager.GetActiveScene().buildIndex > 0)
+            {
+                FindObjectOfType<AudioManager>().Play("checkpoint");
+            }
            
 
         }

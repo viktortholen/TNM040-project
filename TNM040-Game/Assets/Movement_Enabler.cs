@@ -21,6 +21,7 @@ public class Movement_Enabler : MonoBehaviour {
             if (Down)
             {
                 EnableDown();
+                FindObjectOfType<AudioManager>().Play("powerup");
             }
             if (Left)
             {
