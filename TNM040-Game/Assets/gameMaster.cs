@@ -18,11 +18,6 @@ public class gameMaster : MonoBehaviour {
           childs = Grid.transform.childCount;
     }
 
-
-
-
-
-
 private void Update()
     {
       

@@ -8,7 +8,6 @@ public class HealthManager : MonoBehaviour {
     {
         if (col.CompareTag("Player"))
         {
-            Debug.Log("Du har blivit träffad!!");
             GameControlScript.health -= 1;
         }
         
