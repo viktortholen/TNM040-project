@@ -11,7 +11,7 @@ public class HealthManager : MonoBehaviour {
         if (col.CompareTag("Player"))
         {
 
-                GameControlScript.health -= 1;
+               // GameControlScript.health -= 1;
 
         }
         

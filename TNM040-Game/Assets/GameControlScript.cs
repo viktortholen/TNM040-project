@@ -6,7 +6,7 @@ public class GameControlScript : MonoBehaviour {
 
     public GameObject heart1, heart2, heart3, gameOver;
     public GameObject restartButton;
-    public static int health;
+    public static double health;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +31,7 @@ public class GameControlScript : MonoBehaviour {
         {
             health = 0;
         }
-        switch (health)
+        switch ((int)health)
         {
             case 3:
                 heart1.gameObject.SetActive(true);

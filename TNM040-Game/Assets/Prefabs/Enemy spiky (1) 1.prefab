@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 58532547267894270}
   - component: {fileID: 50128431942231772}
   - component: {fileID: 114573719249347954}
-  - component: {fileID: 114831476881740650}
   m_Layer: 0
   m_Name: Enemy spiky (1) 1
   m_TagString: Enemy
@@ -171,17 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelManager: {fileID: 114942189684982770, guid: 1262d5e9903e89043be27a84d7707630,
     type: 2}
---- !u!114 &114831476881740650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745323074625074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62a15b97d85a88f4eb44852e7a458ecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212880184970927614
 SpriteRenderer:
   m_ObjectHideFlags: 1

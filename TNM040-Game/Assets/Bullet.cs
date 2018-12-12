@@ -22,11 +22,12 @@ public class Bullet : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Debug.Log(hitInfo.name);
+
         if(hitInfo.CompareTag("Player") || hitInfo.CompareTag("Props"))
         {
+            rb.velocity = transform.right * 0 ;
             GameObject clone = (GameObject)Instantiate(ps, transform.position, Quaternion.identity);
-            Destroy(gameObject, 0.2f);
+            Destroy(gameObject);
             Destroy(clone, 1.0f);
         }
         

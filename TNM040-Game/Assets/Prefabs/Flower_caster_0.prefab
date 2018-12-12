@@ -37,7 +37,6 @@ GameObject:
   - component: {fileID: 212236052910753444}
   - component: {fileID: 95632463522721848}
   - component: {fileID: 114673728742758712}
-  - component: {fileID: 114732506812666202}
   m_Layer: 0
   m_Name: Flower_caster_0
   m_TagString: Untagged
@@ -103,19 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePoint: {fileID: 4943612560647230}
   bulletPrefab: {fileID: 1971076933706840, guid: a7eff193475706c43b8912c2b4c5df8a,
-    type: 2}
---- !u!114 &114732506812666202
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1823599291211690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d51161a4ad682c047b5c6532a9429579, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelManager: {fileID: 114942189684982770, guid: 1262d5e9903e89043be27a84d7707630,
     type: 2}
 --- !u!212 &212236052910753444
 SpriteRenderer:

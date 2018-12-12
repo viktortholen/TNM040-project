@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,19 +12,25 @@ public class KillPlayer : MonoBehaviour {
         levelManager = FindObjectOfType<LevelManager>();
         
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name == "Player")
+        if(collision.CompareTag("Player"))
         {
-            levelManager.RespawnPlayer();
+            if(this.tag == "Bullet")
+            {
+                levelManager.RespawnPlayer();
+                GameControlScript.health -= 0.5;
+            }
+            else
+            {
+                levelManager.RespawnPlayer();
+                GameControlScript.health -= 1;
+            }
+            
 
         }
     }
+
 
 }

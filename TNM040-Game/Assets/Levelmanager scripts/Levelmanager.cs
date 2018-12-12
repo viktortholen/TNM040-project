@@ -13,16 +13,11 @@ public class LevelManager : MonoBehaviour {
         player = FindObjectOfType<PlayerController>();
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void RespawnPlayer()
     {
-        Debug.Log("Player Respawn");
-        player.transform.position = currentCheckpoint.transform.position;
 
+        player.transform.position = currentCheckpoint.transform.position;
+        
     }
 }

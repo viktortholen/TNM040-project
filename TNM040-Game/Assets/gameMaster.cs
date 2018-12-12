@@ -15,6 +15,7 @@ public class gameMaster : MonoBehaviour {
 
     private void Start()
     {
+        Time.timeScale = 1;
           childs = Grid.transform.childCount;
     }
 
