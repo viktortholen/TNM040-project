@@ -11,6 +11,7 @@ TagManager:
   - Base
   - Enemy
   - Life
+  - Bullet
   layers:
   - Default
   - TransparentFX
