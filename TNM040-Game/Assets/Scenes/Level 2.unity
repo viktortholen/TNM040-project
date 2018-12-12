@@ -511,6 +511,11 @@ Prefab:
       propertyPath: PointScore
       value: 
       objectReference: {fileID: 818125458}
+    - target: {fileID: 114705610222914868, guid: 76ad9f06d35c0cd48914870429ff6069,
+        type: 2}
+      propertyPath: Grid
+      value: 
+      objectReference: {fileID: 2129345657}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76ad9f06d35c0cd48914870429ff6069, type: 2}
   m_IsPrefabAsset: 0
