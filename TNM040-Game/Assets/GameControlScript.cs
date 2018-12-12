@@ -27,7 +27,11 @@ public class GameControlScript : MonoBehaviour {
         {
             health = 3;
         }
-        switch(health)
+        if (health < 0)
+        {
+            health = 0;
+        }
+        switch (health)
         {
             case 3:
                 heart1.gameObject.SetActive(true);
