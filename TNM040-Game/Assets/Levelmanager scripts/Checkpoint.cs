@@ -11,20 +11,12 @@ public class Checkpoint : MonoBehaviour
     void Start()
     {
         levelManager = FindObjectOfType<LevelManager>();
-
-        if (SceneManager.GetActiveScene().buildIndex > 0 && SceneManager.GetActiveScene().buildIndex != 4)
-        {
-            FindObjectOfType<AudioManager>().Play("soundtrack");
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            FindObjectOfType<AudioManager>().Play("psy");
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
