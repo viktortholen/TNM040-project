@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 51baa953d9520274c9819baa86da55b1
-  - enabled: 1
-    path: Assets/Scenes/Retry.unity
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/8e0d4337b11e51243a0c246512cc266e
     guid: 8e0d4337b11e51243a0c246512cc266e
   - enabled: 1
     path: Assets/Scenes/End.unity

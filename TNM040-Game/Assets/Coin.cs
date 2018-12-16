@@ -19,10 +19,12 @@ public class Coin : MonoBehaviour
             gm.points++;
             if (CoinParticle)
             {
-                Instantiate(CoinParticle, transform.position, Quaternion.identity);
+                GameObject clone = (GameObject)Instantiate(CoinParticle, transform.position, Quaternion.identity);
+                Destroy(clone, 2.0f);
             }
            
             Destroy(this.gameObject);
+
             FindObjectOfType<AudioManager>().Play("coin");
             
         }

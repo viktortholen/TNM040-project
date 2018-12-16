@@ -49041,6 +49041,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114751397674202242, guid: 6b6eb5a4670a06942a495298bbffb81c,
+        type: 2}
+      propertyPath: TimerText
+      value: 
+      objectReference: {fileID: 1821634829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6eb5a4670a06942a495298bbffb81c, type: 2}
   m_IsPrefabAsset: 0
